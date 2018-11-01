@@ -60,7 +60,7 @@ var Footer = {
     getData: function () {
         var _this = this
         $.ajax({
-            url: 'http://api.jirengu.com/fm/getChannels.php',
+            url: 'https://jirenguapi.applinzi.com/fm/getChannels.php',
             method: 'GET',
         }).done(function (data) {
             _this.renderFooter(JSON.parse(data))
