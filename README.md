@@ -1,6 +1,6 @@
 # 响应式全屏音乐播放器
 
-[预览地址](https://github.com/cccccchenyuhao/RWD_Music)
+[预览地址](https://cccccchenyuhao.github.io/RWD_Music/)
 
 功能分析：
 
