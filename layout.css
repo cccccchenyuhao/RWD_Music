@@ -1,0 +1,161 @@
+html, body {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+#page-music main {
+    padding: 0 10vh 0 10vh;
+    height: 70vh;
+}
+
+#page-music footer {
+    height: 30vh;
+}
+
+.panel {
+    float: left;
+    height: 100%;
+}
+
+.panel .cover {
+    width: 40vh;
+    height: 40vh;
+    margin-top: 10vh;
+    background: url() center/cover;
+}
+
+.panel .control {
+    display: flex;
+    text-align: center;
+}
+
+.panel .control i {
+    margin-top: 8vh;
+    flex: 1;
+}
+
+.info {
+    padding: 10vh;
+    width: calc(100% - 40vh);
+    float: left;
+    height: 100%;
+}
+
+.info-ctrl {
+    display: flex;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.info-ctrl i {
+    flex: 1;
+}
+
+.progress-bar {
+    border-radius: .5vh;
+    width: 100%;
+    background-color: #333;
+}
+
+.progress {
+    border-radius: .5vh;
+    width: 1%;
+    height: 1.5vh;
+    background-color: #fff;
+}
+
+.title {
+    margin-top: 2vh;
+}
+
+.lyric {
+    margin-top: 4vh;
+}
+
+#page-music footer .wrap {
+    height: 30vh;
+    margin: 0vh 10vh;
+    overflow: hidden;
+    position: relative;
+}
+
+footer ul {
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    text-align: center;
+}
+
+footer li {
+    margin-right: 5vh;
+    float: left;
+}
+
+footer li.active {
+    box-shadow: 0vh 0vh .25vh .25vh rgba(255, 255, 255, 1);
+}
+
+footer li div {
+    width: 20vh;
+    height: 20vh;
+    background: url() center/cover;
+}
+
+.bg {
+    position: absolute;
+    z-index: -2;
+    left: -10px;
+    top: -10px;
+    bottom: -10px;
+    right: -10px;
+    background: url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-big) center center no-repeat;
+    background-size: cover;
+    filter: blur(4px);
+}
+
+.bg::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    position: relative;
+}
+
+footer::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.prev.active {
+    display: block;
+    font-size: 10vh;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+}
+
+.next.active {
+    display: block;
+    font-size: 10vh;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+}
+
+.prev, .next {
+    display: none;
+}
